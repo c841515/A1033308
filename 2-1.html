@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2-1</title>
+</head>
+<body>
+	<!--點一下全選後所有checkbox 會全勾，再點一下會全部取消，禁止使用jquery-->
+	<input type="button" value="全選"></br>
+	1.桌子<input type="checkbox" name="desktop" value="desktop"></br>
+	2.椅子<input type="checkbox" name="chair" value="chair"></br>
+	3.電視<input type="checkbox" name="tv" value="tv"></br>
+	4.洗衣機<input type="checkbox" name="wash" value="wash"></br>
+	5.廚房<input type="checkbox" name="kitchen" value="kitchen"></br>
+	6.浴室<input type="checkbox" name="bathroom" value="bathroom"></br>
+</body>
+</body>
+</html>
+
+
+
+<!--全選/全不選-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>CheckBox1全選或全不選</title> 
+<style type="text/css"> 
+p {margin:0;font-size:12px;line-height:26px;} 
+</style> 
+<script type="text/javascript"> 
+function check_all(obj,cName) 
+{ 
+    var checkbox1 = document.getElementsByName(cName); 
+    for(var i=0;i<checkbox1.length;i++){checkbox1[i].checked = obj.checked;} 
+} 
+</script> 
+</head> 
+  
+<body> 
+     <p> <input type="checkbox1" name="all" onclick="check_all(this,'')" />全選/全不選</p> 
+     桌子<input type="checkbox1" name="desktop" value="desktop"></br>
+	 椅子<input type="checkbox1" name="chair" value="chair"></br>
+	 電視<input type="checkbox1" name="tv" value="tv"></br>
+	 洗衣機<input type="checkbox1" name="wash" value="wash"></br>
+	 廚房<input type="checkbox1" name="kitchen" value="kitchen"></br>
+	 浴室<input type="checkbox1" name="bathroom" value="bathroom"></br>
+<input type="button" value="全選"></br>
+
+</body> 
+</html>
